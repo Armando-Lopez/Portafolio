@@ -1,0 +1,20 @@
+.navigation {
+  width: 100%;
+  padding: 0;
+  // z-index: 5;
+  margin: 0;
+  background-color: thistle;
+
+  .navigation__list {
+    width: 100%;
+    // margin: 0;
+    padding: 0;
+    // max-width: 0;
+    list-style: none;
+  }
+
+  .navigation__item {
+    display: inline;
+    padding: 0.5em;
+  }
+}

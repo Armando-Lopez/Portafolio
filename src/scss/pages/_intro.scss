@@ -1,0 +1,29 @@
+@import "../animations/letters";
+
+.intro {
+  height: 100vh;
+  //   display: flex;
+  background-color: violet;
+}
+
+.intro__content {
+  background-color: grey;
+}
+
+.intro__my-name {
+  height: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.my-description {
+  line-height: 20px;
+  margin: auto;
+  width: 85%;
+  color: white;
+  text-align: justify;
+}

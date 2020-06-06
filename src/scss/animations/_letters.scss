@@ -1,0 +1,216 @@
+.intro__my-name .letter {
+  margin: 0 3px;
+  font-size: 1.3em;
+}
+
+// FOR LETTER D
+.intro__my-name .letter#D {
+  color: white;
+  // transform: rotate(-90deg);
+  // animation-delay: 3.8s;
+  // animation-name: capital;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-in;
+  // animation-fill-mode: forwards;
+  // animation-iteration-count: 1;
+  animation: capitalD 1s 3.9s 1 ease-in forwards;
+  &::after {
+    content: "iego";
+    animation: animateDletters 1s 3s 1 ease-in forwards;
+  }
+}
+
+@keyframes capitalD {
+  0% {
+    transform: rotate(10deg);
+    margin: 0 0;
+  }
+  80% {
+    transform: rotate(-90deg);
+  }
+  90% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+    margin: 0 0;
+  }
+}
+
+@keyframes animateDletters {
+  0% {
+    content: "iego";
+  }
+  25% {
+    content: "ieg";
+  }
+  50% {
+    content: "ie";
+  }
+  72% {
+    content: "i";
+  }
+  100% {
+    content: "";
+  }
+}
+//END LETTERD
+
+//LETTER A
+.intro__my-name .letter#A {
+  color: white;
+  animation: capitalA 1s 3.9s 1 ease-in forwards;
+  &::after {
+    content: "rmando";
+    animation: animateDletters 1s 3s 1 ease-in forwards;
+  }
+}
+
+@keyframes capitalA {
+  0% {
+    transform: rotate(-20deg);
+    margin: 0 -1px 0 0;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+    margin: 0 -1px 0 0;
+  }
+}
+
+@keyframes animateDletters {
+  0% {
+    content: "rmando";
+  }
+  16% {
+    content: "mando";
+  }
+  32% {
+    content: "ando";
+  }
+  48% {
+    content: "ndo";
+  }
+  64% {
+    content: "do";
+  }
+  82% {
+    content: "o";
+  }
+  100% {
+    content: "";
+  }
+}
+//END LETTER A
+
+//LETTER L
+.intro__my-name .letter#L {
+  color: white;
+  animation: capitalL 1s 3.9s 1 ease-in forwards;
+  &::after {
+    content: "ópez";
+    animation: animateDletters 1s 3s 1 ease-in forwards;
+  }
+}
+
+@keyframes capitalL {
+  0% {
+    transform: rotate(20deg);
+    margin: 0 0 0 -1px;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  90% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+    margin: 0 0 0 -1px;
+  }
+}
+
+@keyframes animateDletters {
+  0% {
+    content: "ópez";
+  }
+  25% {
+    content: "pez";
+  }
+  50% {
+    content: "ez";
+  }
+  75% {
+    content: "z";
+  }
+  100% {
+    content: "";
+  }
+}
+//END LETTER L
+
+//LETTER V
+.intro__my-name .letter#V {
+  color: white;
+  animation: capitalV 1s 3.9s 1 ease-in forwards;
+  &::after {
+    content: "aloyes";
+    animation: animateDletters 1s 3s 1 ease-in forwards;
+  }
+}
+
+@keyframes capitalV {
+  0% {
+    transform: rotate(-10deg);
+    margin: 0 0;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(90deg);
+  }
+  90% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    margin: 0 0;
+  }
+}
+
+@keyframes animateDletters {
+  0% {
+    content: "aloyes";
+  }
+  16% {
+    content: "loyes";
+  }
+  32% {
+    content: "oyes";
+  }
+  48% {
+    content: "yes";
+  }
+  64% {
+    content: "es";
+  }
+  82% {
+    content: "s";
+  }
+  100% {
+    content: "";
+  }
+}
+//END LETTER L

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Technical documentation page",
+    "description": "This technical documentation is about SASS",
+    "url": "https://armando-lopez.github.io/responsive-web-design-projects/technical-documentation-page/",
+    "img": "https://github.com/Armando-Lopez/responsive-web-design-projects/blob/master/personal-portafilo/img/documentatio-preview.png?raw=true"
+  },
+  {
+    "title": "Survey from",
+    "description": "Survey from to know more about you",
+    "url": "https://armando-lopez.github.io/responsive-web-design-projects/survey-form/",
+    "img": "https://github.com/Armando-Lopez/responsive-web-design-projects/blob/master/personal-portafilo/img/form-preview.png?raw=true"
+  },
+  {
+    "title": "Tribue page",
+    "description": "A tribute to the man who saved the universe from Thanos",
+    "url": "https://armando-lopez.github.io/responsive-web-design-projects/tribute-page/",
+    "img": "https://github.com/Armando-Lopez/responsive-web-design-projects/blob/master/personal-portafilo/img/tribule-preview.png?raw=true"
+  },
+  {
+    "title": "Product landing page",
+    "description": "This product is a small bike made width lighters",
+    "url": "https://armando-lopez.github.io/responsive-web-design-projects/landing-page/",
+    "img": "https://github.com/Armando-Lopez/responsive-web-design-projects/blob/master/personal-portafilo/img/landign-preview.png?raw=true"
+  }
+]
