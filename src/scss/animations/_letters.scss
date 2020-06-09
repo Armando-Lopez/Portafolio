@@ -1,6 +1,6 @@
 .intro__my-name .letter {
   margin: 0 3px;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 // FOR LETTER D
@@ -34,6 +34,7 @@
   100% {
     transform: rotate(-90deg);
     margin: 0 0;
+    font-size: 2.5em;
   }
 }
 
@@ -83,6 +84,7 @@
   100% {
     transform: rotate(20deg);
     margin: 0 -1px 0 0;
+    font-size: 2.5em;
   }
 }
 
@@ -138,6 +140,7 @@
   100% {
     transform: rotate(-20deg);
     margin: 0 0 0 -1px;
+    font-size: 2.5em;
   }
 }
 
@@ -187,6 +190,7 @@
   100% {
     transform: rotate(90deg);
     margin: 0 0;
+    font-size: 2.5em;
   }
 }
 

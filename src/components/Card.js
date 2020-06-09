@@ -4,27 +4,16 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      index: undefined,
-      title: undefined,
-      description: undefined,
-      url: undefined,
-      img: undefined,
-    };
-    this._scrollAppear = this._scrollAppear.bind(this);
-  }
-
-  componentDidMount() {
-    this.setState({
       index: this.props.index,
       title: this.props.title,
       description: this.props.description,
       url: this.props.url,
       img: this.props.img,
-    });
+    };
+    this._scrollAppear = this._scrollAppear.bind(this);
+  }
 
-    this.card = React.createRef();
-    if (this.card.current) console.log(this.card);
-
+  componentDidMount() {
     const card = document.querySelectorAll(".card")[this.props.index];
     const cardTitle = card.querySelector(".card__title");
     const cardDescription = card.querySelector(".card__description");
@@ -45,8 +34,8 @@ class Card extends React.Component {
   render() {
     const { title, description, url, img } = this.state;
     return (
-      <a href={url}>
-        <div className="card" ref={this.card}>
+      <div className="card">
+        <a href={url}>
           <img
             className="card__thumbnail"
             src={img}
@@ -59,8 +48,8 @@ class Card extends React.Component {
           <div className="card__description">
             <p>{description}</p>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     );
   }
 }

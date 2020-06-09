@@ -354,26 +354,114 @@ template {
 }
 
 .navigation {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: thistle;
+  z-index: 5;
+  background-color: #121420;
 }
 
-.navigation .navigation__list {
-  width: 100%;
-  padding: 0;
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  height: 100%;
   list-style: none;
 }
 
-.navigation .navigation__item {
-  display: inline;
+.navigation__item {
+  position: relative;
+  display: block;
   padding: 0.5em;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.navigation__item::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  display: none;
+  border-radius: 50% 50% 0 0;
+  pointer-events: none;
+}
+
+#about-me {
+  background-color: #2c2b3c;
+}
+
+#about-me::before {
+  background-color: #2c2b3c;
+}
+
+#projects {
+  background-color: #403f4c;
+}
+
+#projects::before {
+  background-color: #403f4c;
+}
+
+.going_to::before {
+  display: block;
+  animation-name: going_to;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-fill-mode: forwards;
+}
+
+@keyframes going_to {
+  from {
+    top: 0%;
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 1500%;
+    height: 1500%;
+    top: -1500%;
+  }
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro__content {
+  height: 99%;
+  background-color: #2c2b3c;
+  overflow: scroll;
+}
+
+.intro__my-name {
+  height: 20vh;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.my-description {
+  line-height: 20px;
+  margin: auto;
+  width: 90%;
+  color: white;
+  text-align: justify;
+}
+
+.my-description::first-letter {
+  font-size: 3em;
 }
 
 .intro__my-name .letter {
   margin: 0 3px;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .intro__my-name .letter#D {
@@ -400,6 +488,7 @@ template {
   100% {
     transform: rotate(-90deg);
     margin: 0 0;
+    font-size: 2.5em;
   }
 }
 
@@ -448,6 +537,7 @@ template {
   100% {
     transform: rotate(20deg);
     margin: 0 -1px 0 0;
+    font-size: 2.5em;
   }
 }
 
@@ -502,6 +592,7 @@ template {
   100% {
     transform: rotate(-20deg);
     margin: 0 0 0 -1px;
+    font-size: 2.5em;
   }
 }
 
@@ -550,6 +641,7 @@ template {
   100% {
     transform: rotate(90deg);
     margin: 0 0;
+    font-size: 2.5em;
   }
 }
 
@@ -577,43 +669,16 @@ template {
   }
 }
 
-.intro {
-  height: 100vh;
-  background-color: violet;
-}
-
-.intro__content {
-  background-color: grey;
-}
-
-.intro__my-name {
-  height: 20vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.my-description {
-  line-height: 20px;
-  margin: auto;
-  width: 85%;
-  color: white;
-  text-align: justify;
-}
-
 .projects__content {
   min-height: 100vh;
-  margin: 0;
-  background-color: steelblue;
+  background-color: #403f4c;
   overflow-x: hidden;
 }
 
 .projects__title {
   text-align: center;
-  margin: 0;
+  margin: 1em;
+  color: white;
 }
 
 .cards-container {
@@ -626,8 +691,9 @@ template {
   height: 300px;
   width: 80%;
   text-decoration: none;
+  color: white;
   border-radius: 20px 10px;
-  box-shadow: 3px 3px 5px gray;
+  box-shadow: 3px 3px 5px black;
   background-position: center;
   background-size: cover;
 }
@@ -640,11 +706,12 @@ template {
 
 .card__title {
   position: absolute;
-  top: -10%;
+  top: -15%;
   left: -100%;
   transform: translate(0%, 10%);
-  padding: 0 3px;
-  background-color: thistle;
+  padding: 10px 5px;
+  color: white;
+  background-color: #b76d68;
   border-radius: 7px;
   box-shadow: 3px 3px 5px 1px black;
   opacity: 0;
@@ -661,10 +728,12 @@ template {
   width: 50%;
   bottom: -10%;
   right: -100%;
-  padding: 0 3px;
+  padding: 5px;
   transform: translate(-10%, -10%);
+  color: white;
+  font-size: 1.1em;
   border-radius: 7px;
-  background-color: springgreen;
+  background-color: #1b2432;
   box-shadow: -3px 3px 5px 1px black;
   opacity: 0;
   transition: 1s all cubic-bezier(0.68, -0.55, 0.265, 2);
@@ -675,13 +744,15 @@ template {
   right: -15%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Noto Serif", serif;
   overflow-x: hidden;
-}
-
-.border {
-  border: 2px solid black;
 }
 
 /* Extra small devices (phones, 600px and down) 

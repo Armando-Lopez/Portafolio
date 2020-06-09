@@ -1,17 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import goTo from "../functions/myRouter";
 
 const Navigation = () => {
   return (
-    <nav className="navigation border">
+    <nav className="navigation">
       <ul className="navigation__list">
-        <li className="navigation__item">DALV</li>
-        <Link to="/">
-          <li className="navigation__item">Intro</li>
-        </Link>
-        <Link to="projects">
-          <li className="navigation__item">Projects</li>
-        </Link>
+        <li
+          id="about-me"
+          className="navigation__item"
+          onClick={() => goTo("/")}
+        >
+          About me
+        </li>
+        <li
+          id="projects"
+          className="navigation__item"
+          onClick={() => goTo("projects")}
+        >
+          Projects
+        </li>
       </ul>
     </nav>
   );

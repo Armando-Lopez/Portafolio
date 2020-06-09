@@ -9,8 +9,10 @@ import "./scss/style.css";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Route exact path="/" component={Intro} />
-      <Route exact path="/projects" component={Projects} />
+      <main>
+        <Route exact path="/" component={Intro} />
+        <Route exact path="/projects" component={Projects} />
+      </main>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

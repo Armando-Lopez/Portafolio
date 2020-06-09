@@ -22,9 +22,10 @@ const Projects = () => {
                 <Card
                   key={index}
                   index={index}
-                  img={project.img}
                   title={project.title}
                   description={project.description}
+                  url={project.url}
+                  img={project.img}
                 />
               );
             })}

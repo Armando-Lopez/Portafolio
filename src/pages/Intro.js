@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <section className="intro">
       <Navigation />
       <div className="intro__content">
         <div className="intro__my-name">
@@ -34,7 +34,7 @@ const Intro = () => {
           voluptatibus. Itaque ea fugit mollitia nulla a odio sequi ut nostrum.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

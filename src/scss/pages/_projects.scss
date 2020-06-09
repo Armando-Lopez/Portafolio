@@ -1,13 +1,13 @@
 .projects__content {
   min-height: 100vh;
-  margin: 0;
-  background-color: steelblue;
+  background-color: $primary;
   overflow-x: hidden;
 }
 
 .projects__title {
   text-align: center;
-  margin: 0;
+  margin: 1em;
+  color: white;
 }
 
 .cards-container {
@@ -20,9 +20,9 @@
   height: 300px;
   width: 80%;
   text-decoration: none;
+  color: white;
   border-radius: 20px 10px;
-  box-shadow: 3px 3px 5px gray;
-
+  box-shadow: 3px 3px 5px black;
   background-position: center;
   background-size: cover;
 }
@@ -35,11 +35,12 @@
 
 .card__title {
   position: absolute;
-  top: -10%;
+  top: -15%;
   left: -100%;
   transform: translate(0%, 10%);
-  padding: 0 3px;
-  background-color: thistle;
+  padding: 10px 5px;
+  color: white;
+  background-color: $contras;
   border-radius: 7px;
   box-shadow: 3px 3px 5px 1px black;
 
@@ -56,10 +57,14 @@
   width: 50%;
   bottom: -10%;
   right: -100%;
-  padding: 0 3px;
+  padding: 5px;
   transform: translate(-10%, -10%);
+
+  color: white;
+  font-size: 1.1em;
+
   border-radius: 7px;
-  background-color: springgreen;
+  background-color: $terciary;
   box-shadow: -3px 3px 5px 1px black;
 
   opacity: 0;

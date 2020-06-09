@@ -1,18 +1,17 @@
-@import "../animations/letters";
-
 .intro {
   height: 100vh;
-  //   display: flex;
-  background-color: violet;
 }
 
 .intro__content {
-  background-color: grey;
+  height: 99%;
+  background-color: $secundary;
+  overflow: scroll;
 }
 
 .intro__my-name {
   height: 20vh;
-  position: relative;
+  padding: 0 5px;
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,13 @@
 .my-description {
   line-height: 20px;
   margin: auto;
-  width: 85%;
+  width: 90%;
   color: white;
   text-align: justify;
+
+  &::first-letter {
+    font-size: 3em;
+  }
 }
+
+@import "../animations/letters";
