@@ -10,45 +10,41 @@ class Card extends React.Component {
       url: this.props.url,
       img: this.props.img,
     };
-    this._scrollAppear = this._scrollAppear.bind(this);
+    // this._scrollAppear = this._scrollAppear.bind(this);
   }
 
-  componentDidMount() {
-    const card = document.querySelectorAll(".card")[this.props.index];
-    const cardTitle = card.querySelector(".card__title");
-    const cardDescription = card.querySelector(".card__description");
-    this._scrollAppear(card, cardTitle, cardDescription);
-    window.addEventListener("scroll", () => {
-      this._scrollAppear(card, cardTitle, cardDescription);
-    });
-  }
+  // componentDidMount() {
+  //   const card = document.querySelectorAll(".card")[this.props.index];
+  //   const cardTitle = card.querySelector(".card__title");
+  //   const cardDescription = card.querySelector(".card__description");
+  //   this._scrollAppear(card, cardTitle, cardDescription);
+  //   window.addEventListener("scroll", () => {
+  //     this._scrollAppear(card, cardTitle, cardDescription);
+  //   });
+  // }
 
-  _scrollAppear(card, cardTitle, cardDescription) {
-    const cardPosition = card.getBoundingClientRect().top;
-    if (cardPosition < window.innerHeight / 1.3) {
-      cardTitle.classList.add("card__title-appear");
-      cardDescription.classList.add("card__description-appear");
-    }
-  }
+  // _scrollAppear(card, cardTitle, cardDescription) {
+  //   const cardPosition = card.getBoundingClientRect().top;
+  //   if (cardPosition < window.innerHeight / 1.3) {
+  //     cardTitle.classList.add("card__title-appear");
+  //     cardDescription.classList.add("card__description-appear");
+  //   }
+  // }
 
   render() {
     const { title, description, url, img } = this.state;
     return (
       <div className="card">
-        <a href={url}>
-          <img
-            className="card__thumbnail"
-            src={img}
-            alt={title}
-            loading="lazy"
-          />
-          <div className="card__title">
-            <h3>{title}</h3>
-          </div>
-          <div className="card__description">
-            <p>{description}</p>
-          </div>
-        </a>
+        <div className="card__thumbnail">
+          <img src={img} alt={title} loading="lazy" />
+        </div>
+        <div className="card__content">
+          <h3 className="name">{title}</h3>
+          <p className="description">{description}</p>
+          <a className="link" href={url}>
+            Visit project
+          </a>
+        </div>
       </div>
     );
   }

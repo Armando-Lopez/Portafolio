@@ -12,8 +12,7 @@ const Projects = () => {
 
   if (projects) {
     return (
-      <div className="projects">
-        <Navigation />
+      <section className="projects">
         <div className="projects__content">
           <h1 className="projects__title">Projects</h1>
           <div className="cards-container">
@@ -31,7 +30,7 @@ const Projects = () => {
             })}
           </div>
         </div>
-      </div>
+      </section>
     );
   } else {
     return (

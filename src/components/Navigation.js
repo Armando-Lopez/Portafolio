@@ -1,22 +1,13 @@
 import React from "react";
-import goTo from "../functions/myRouter";
 
 const Navigation = () => {
   return (
     <nav className="navigation">
       <ul className="navigation__list">
-        <li
-          id="about-me"
-          className="navigation__item"
-          onClick={() => goTo("/")}
-        >
+        <li id="about-me" className="navigation__item">
           About me
         </li>
-        <li
-          id="projects"
-          className="navigation__item"
-          onClick={() => goTo("projects")}
-        >
+        <li id="projects" className="navigation__item">
           Projects
         </li>
       </ul>
