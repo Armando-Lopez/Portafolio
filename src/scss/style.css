@@ -428,7 +428,7 @@ template {
 }
 
 .intro {
-  height: 100vh;
+  height: 90vh;
 }
 
 .intro__content {
@@ -442,6 +442,8 @@ template {
 
 .about {
   transition: all ease-in 1s;
+  padding-bottom: 2em;
+  max-width: 700px;
 }
 
 .intro__my-name {
@@ -462,7 +464,7 @@ template {
   text-align: justify;
 }
 
-.my-description::first-letter {
+.my-description p::first-letter {
   font-size: 3em;
 }
 
@@ -475,7 +477,7 @@ template {
   transition: all ease-in 1s;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .intro__content {
     padding: 4em 2em 0;
     display: flex;

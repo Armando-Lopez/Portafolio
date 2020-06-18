@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "../components/Navigation";
 import photo from "../img/photoMe.jpg";
 const Intro = () => {
   return (
@@ -21,13 +20,13 @@ const Intro = () => {
             </h1>
           </div>
           <div className="my-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At veniam
-            nulla aliquid dignissimos neque iure labore, delectus magni id eum
-            illo tempore, quos molestiae quia totam quaerat atque! Nesciunt
-            reprehenderit aliquam iusto molestiae, expedita repudiandae
-            obcaecati corrupti repellendus voluptatum dolores eos? Dolore eius
-            officiis quibusdam nul unde distinctio totam id fugiat voluptatibus.
-            Itaque ea fugit mollitia nulla a odio sequi ut nostrum.
+            <p>
+              Hi!. I'am Diego. I am pasionate about web development. Working
+              every to improve my skills, i want to build great things. I love
+              animations and transitions. In this portfolio you will see my
+              projects from my beginigs to this day. I will improving this page
+              as well as some of my projects already published.
+            </p>
           </div>
         </div>
         <div className="photo">

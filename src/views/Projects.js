@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navigation from "../components/Navigation";
 import Card from "../components/Card";
 import projects_service from "../projects_service.json";
 
@@ -35,7 +34,6 @@ const Projects = () => {
   } else {
     return (
       <div>
-        <Navigation />
         <h1>There are not projects to show</h1>
       </div>
     );
