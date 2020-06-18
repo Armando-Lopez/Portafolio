@@ -725,7 +725,7 @@ body {
 
 .skills {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-color: #222831;
   overflow: hidden;
   display: flex;
@@ -747,7 +747,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: upBubble 7s ease-in infinite;
+  animation: upBubble 10s ease-in infinite;
 }
 
 .skills .skill::before {
