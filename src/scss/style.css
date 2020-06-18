@@ -747,6 +747,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: upBubble 7s ease-in infinite;
 }
 
 .skills .skill::before {
@@ -764,21 +765,14 @@ body {
   color: #eeeeee;
 }
 
-@keyframes bubble {
-  0% {
-    border-radius: 50% 50% 50% 50%;
+@keyframes upBubble {
+  from {
+    transform: translateY(0);
+    transform: scale(0.5);
   }
-  25% {
-    border-radius: 70% 50% 30% 50%;
-  }
-  50% {
-    border-radius: 50% 50% 50% 50%;
-  }
-  75% {
-    border-radius: 50% 60% 50% 40%;
-  }
-  100% {
-    border-radius: 50% 50% 50% 50%;
+  to {
+    transform: scale(1.5);
+    top: 0;
   }
 }
 

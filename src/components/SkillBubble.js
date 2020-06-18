@@ -9,8 +9,9 @@ const SkillBubble = ({ icon }) => {
       style={{
         width: `${size}px`,
         height: `${size}px`,
-        top: `${Math.random() * 85}%`,
+        top: `100%`,
         left: `${Math.random() * 85}%`,
+        animationDelay: `${Math.random() * 10}s`,
       }}
     >
       <i className={icon}></i>
