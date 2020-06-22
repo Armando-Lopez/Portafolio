@@ -7,6 +7,14 @@ const Contact = () => {
       <div className="contact__redes">
         <a
           className="contact__link"
+          href="https://api.whatsapp.com/send?phone=+573116758177"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
+        <a
+          className="contact__link"
           href="https://github.com/Armando-Lopez"
           target="_blank"
           rel="noopener noreferrer"
