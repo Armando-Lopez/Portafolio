@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillBubble = ({ icon }) => {
+const SkillBubble = ({ icon, color, index }) => {
   let size = Math.random() * 100;
 
   return (
@@ -11,10 +11,10 @@ const SkillBubble = ({ icon }) => {
         height: `${size}px`,
         top: `100%`,
         left: `${Math.random() * 85}%`,
-        animationDelay: `${Math.random() * 10}s`,
+        animationDelay: `${index}s`,
       }}
     >
-      <i className={icon}></i>
+      <i className={icon} style={{ color: color }}></i>
     </span>
   );
 };
