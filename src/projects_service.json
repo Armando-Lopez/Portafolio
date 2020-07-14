@@ -24,6 +24,12 @@
     "img": "https://github.com/Armando-Lopez/projects-thumbnails/blob/master/quotes.png?raw=true"
   },
   {
+    "title": "Recipes app",
+    "description": "Find delicious recipes!",
+    "url": "https://recetas-app.vercel.app/",
+    "img": "https://github.com/Armando-Lopez/projects-thumbnails/blob/master/recipes.png?raw=true"
+  },
+  {
     "title": "Markdown Previewer",
     "description": "This tool will help you see a how a markdown document looks like",
     "url": "https://markdown-previewer-seven.now.sh/",
