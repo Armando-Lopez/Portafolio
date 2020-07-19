@@ -1,5 +1,6 @@
 import React from "react";
 import photo from "../img/photoMe.jpg";
+
 const Intro = () => {
   return (
     <section className="intro">
@@ -22,10 +23,10 @@ const Intro = () => {
           <div className="my-description">
             <p>
               Hi!. I'am Diego. I am pasionate about web development. Working
-              every to improve my skills, i want to build great things. I love
-              animations and transitions. In this portfolio you will see my
-              projects from my beginigs to this day. I will improving this page
-              as well as some of my projects already published.
+              every day to improve my skills, i want to build great things. I
+              love animations. In this portfolio you will see my projects from
+              my beginigs to this day. I will improving this page as well as
+              some of my projects already published.
             </p>
           </div>
         </div>
