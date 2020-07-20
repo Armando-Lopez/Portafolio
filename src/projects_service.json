@@ -1,5 +1,11 @@
 [
   {
+    "title": "Google clon",
+    "description": "Google clon. Pure html,css"
+    "url":"https://armando-lopez.github.io/Google-clone/",
+    "img":"https://github.com/Armando-Lopez/projects-thumbnails/blob/master/google-clon.png?raw=true"
+  },
+  {
     "title": "Drum machine",
     "description": "Do you like music? let's have some fun!",
     "url": "https://drum-machine-eight.now.sh/",
