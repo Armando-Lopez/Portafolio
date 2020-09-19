@@ -42,6 +42,10 @@ const SkillsList = [
     icon: "fab fa-materialize",
     color: "#7478ae",
   },
+  {
+    icon: "fab fa-vuejs",
+    color: "#41b883"
+  }
 ];
 
 const Skills = () => {
