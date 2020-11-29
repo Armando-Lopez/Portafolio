@@ -1,5 +1,11 @@
 [
   {
+    "title": "TODO App",
+    "description": "Don´t get away from your tasks",
+    "url": "https://todo-app-alpha.vercel.app/",
+    "img": "https://github.com/Armando-Lopez/projects-thumbnails/blob/master/todo-app.png?raw=true"
+  },
+  {
     "title": "What's the weather like?",
     "description": "Get weather info around the world in real time",
     "url": "https://whats-the-weather-like-puce.vercel.app/",
