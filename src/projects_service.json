@@ -1,5 +1,11 @@
 [
   {
+    "title": "Tic tac toe (Triki)",
+    "description": "play with friends or versus the robot",
+    "url": "https://front-vue-exercise-one.vercel.app/",
+    "img": "https://github.com/Armando-Lopez/projects-thumbnails/blob/master/tic%20tac%20toe.png?raw=true"
+  },
+  {
     "title": "TODO App",
     "description": "Don´t get away from your tasks",
     "url": "https://todo-app-alpha.vercel.app/",
